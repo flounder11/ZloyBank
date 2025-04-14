@@ -1,0 +1,114 @@
+.logoInput {
+	max-width: 1142px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	row-gap: 48px;
+	margin-top: 385px;
+	transition: margin-top 0.5s ease;
+}
+
+.logoInput.shifted {
+	margin-top: 62px;
+}
+
+.logo {
+	width: 181px;
+	margin: 0 auto;
+}
+
+.logo.hidden {
+	display: none;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.selectQuestion {
+	max-width: 1142px;
+	position: relative;
+}
+
+.selectQuestion input {
+	width: 100%;
+	border: none;
+	background-color: rgba(217, 217, 217);
+	color: rgba(35, 27, 2, 0.8);
+	padding: 17px 0 17px 23px;
+	border-radius: 17px;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+.sendArrow {
+	background-color: #0480b6;
+	border-radius: 5px;
+	border: none;
+	padding: 12px 12px 8px 12px;
+	max-width: 43px;
+	cursor: pointer;
+	position: absolute;
+	top: 9px;
+	right: 20px;
+}
+
+.ellipseMinion {
+	max-width: 420px;
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	z-index: -1;
+}
+
+.ellipseMinion img {
+	width: 100%;
+}
+
+.ellipse2 {
+	max-width: 479px;
+	position: absolute;
+	right: 0;
+	bottom: -4px;
+	z-index: -1;
+}
+
+.ellipse2 img {
+	width: 100%;
+}
+
+.user {
+	color: #fff;
+	background-color: #0480b6;
+	border-radius: 17px 17px 0 17px;
+	padding: 13px 28px;
+	font-size: 26px;
+	font-weight: 400;
+	max-width: fit-content;
+	margin-left: auto;
+	max-width: 900px;
+}
+
+.bot {
+	color: #000;
+	background-color: #d9d9d9;
+	border-radius: 17px 17px 17px 0;
+	padding: 13px 28px;
+	font-size: 26px;
+	font-weight: 400;
+	max-width: fit-content;
+	max-width: 900px;
+}
+
+.messageList {
+	display: flex;
+	flex-direction: column;
+	row-gap: 40px;
+	max-height: 0;
+	overflow-y: auto;
+	transition: max-height 0.5s ease;
+}
+
+.messageList.expanded {
+	max-height: 700px;
+}

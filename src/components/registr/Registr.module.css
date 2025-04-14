@@ -1,0 +1,100 @@
+.registr {
+	width: 960px;
+	box-shadow: 1px 1px 39px 14px #f5e6ba;
+	background: #fffcf3;
+	padding-top: 25px;
+	position: relative;
+}
+
+.loginText {
+	font-size: 50px;
+	font-weight: 500;
+	color: #231b02;
+	text-align: center;
+	margin-bottom: 55px;
+	cursor: pointer;
+}
+
+.loginText span {
+	color: #8c8a83;
+}
+
+.inputs {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	row-gap: 25px;
+	max-width: 442px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.inputs input {
+	padding: 16px 23px;
+	border-radius: 11px;
+	border: 1px solid #000;
+	font-size: 20px;
+	font-weight: 500;
+	color: #8c8a83;
+	max-width: 442px;
+	width: 100%;
+}
+
+.login {
+	max-width: 356px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px 18px;
+	background-color: #f4c228;
+	border-radius: 63px;
+	font-size: 24px;
+	border: none;
+	cursor: pointer;
+}
+
+.authMain {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 202px;
+	padding-bottom: 283px;
+}
+
+.policy {
+	display: flex;
+	max-width: 420px;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+	font-size: 17px;
+	margin-bottom: 25px;
+}
+
+.validation {
+	text-align: center;
+	margin-bottom: 25px;
+	font-size: 16px;
+}
+
+.mirrorCircle {
+	transform: scaleX(-1);
+}
+
+.ellipseBottom {
+	position: absolute;
+	bottom: 0;
+	z-index: 0;
+}
+
+.minionPng {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.ellipseTop {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+}

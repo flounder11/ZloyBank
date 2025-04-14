@@ -1,0 +1,171 @@
+.makeCard {
+	max-width: 1240px;
+	margin: 0 auto;
+	margin-top: 38px;
+	border-radius: 12px;
+	padding: 37px 65px 0 65px;
+	box-shadow: 1px 15px 29px 14px #fff4d2;
+}
+
+.debitCard {
+	background-color: #eee8d3;
+}
+
+.creditCard {
+	background-image: url('../../assets/img/makeCard/99px_ru_animacii_9289_padaushaja_zvezda_na_nochnom_nebe.gif');
+}
+
+.title {
+	font-size: 27px;
+	font-weight: 500;
+	margin-bottom: 56px;
+	text-align: center;
+}
+
+.creditTitle {
+	color: #d0d7da;
+}
+
+.mainCard {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cardImg {
+	max-width: 413px;
+}
+
+.cardImg img {
+	width: 100%;
+}
+
+.cardInfo {
+	width: 596px;
+	background-color: #f9f5e9;
+	border-radius: 6px 6px 0 0;
+	padding: 34px 39px 38px 57px;
+}
+
+.infoTitle {
+	font-size: 22px;
+	font-weight: 500;
+	text-align: center;
+}
+
+.selectData {
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+	margin: 36px 0 44px 0;
+}
+
+.selectData input {
+	background-color: #d0d7da;
+	color: rgba(000, 000, 000, 0.75);
+	max-width: 500px;
+	padding: 14px 16px 14px 16px;
+	border-radius: 12px;
+	border: none;
+	font-size: 18px;
+}
+
+.inputs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.inputs input {
+	max-width: 240px;
+}
+
+.titleRF {
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 14px;
+}
+
+.citizenshipOptions {
+	display: flex;
+	max-width: 360px;
+	justify-content: space-between;
+}
+
+.option {
+	display: flex;
+	justify-content: space-between;
+	width: 170px;
+	align-items: center;
+	padding: 8px 13px 7px 16px;
+	border: 1px solid #231b02;
+	border-radius: 9px;
+	cursor: pointer;
+	background-color: #f9f5e9;
+}
+
+.radioButton {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.radioButton.noSelected {
+	border: 2px solid #333;
+}
+
+.radioButton.selected {
+	background-color: #ffc107;
+}
+
+.radioButton.selected::after {
+	content: '';
+	width: 10px;
+	height: 10px;
+	background-color: #333;
+	border-radius: 50%;
+}
+
+.policy {
+	display: flex;
+	justify-content: space-between;
+	max-width: 500px;
+	margin-top: 41px;
+}
+
+.policy p {
+	font-size: 8px;
+	font-weight: 500;
+	max-width: 307px;
+}
+
+.policy button {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 400;
+	padding: 9px 30px;
+	background-color: #0480b6;
+	border-radius: 12px;
+	border: none;
+	cursor: pointer;
+}
+
+.ellipse1 {
+	position: absolute;
+	z-index: -1;
+	bottom: -1%;
+}
+
+.ellipse2 {
+	position: absolute;
+	right: 0;
+	bottom: -1%;
+	z-index: -1;
+}
+
+.check {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}

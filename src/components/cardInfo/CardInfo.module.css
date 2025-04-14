@@ -1,0 +1,74 @@
+.card {
+	margin: 0 auto;
+	display: flex;
+	position: absolute;
+	column-gap: 30px;
+}
+
+.cardInfo {
+	max-width: 650px;
+}
+
+h3 {
+	font-size: 40px;
+	font-weight: 500;
+	margin-bottom: 22px;
+}
+
+.inflations {
+	display: flex;
+	flex-direction: column;
+	font-size: 33px;
+	font-weight: 400;
+	row-gap: 10px;
+}
+
+.cardInfo a {
+	font-size: 27px;
+	font-weight: 400;
+	color: #fffaea;
+	padding: 14px 18px;
+	border-radius: 17px;
+	background-color: #0480b6;
+	line-height: 60px;
+}
+
+.takeCard {
+	max-width: 333px;
+	margin: 0 auto;
+	margin-top: 60px;
+}
+
+.cardImg {
+	max-width: 623px;
+	transform: rotate(12deg);
+}
+
+.cardImg img {
+	width: 100%;
+}
+
+.mirror {
+	transform: scaleX(-1);
+}
+
+.mirror h3,
+.mirror p,
+.mirror a,
+.mirror img {
+	transform: scaleX(-1);
+}
+
+.circle {
+	position: relative;
+	z-index: -1;
+	bottom: 255px;
+	right: 170px;
+	max-height: 850px;
+}
+
+.mirrorCircle {
+	transform: scaleX(-1);
+	left: 119px;
+	max-height: 670px;
+}

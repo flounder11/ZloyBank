@@ -1,0 +1,73 @@
+.bcDirt {
+	background-image: url('../../assets/img/footer/dirt.png');
+}
+
+.grass {
+	max-width: 100%;
+}
+.grass img {
+	width: 100%;
+	margin-bottom: -10px;
+}
+
+.footerMain {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.logo {
+	max-width: 225px;
+	padding: 65px 0 13px 0;
+}
+
+.logo img {
+	width: 100%;
+}
+
+.footerText {
+	color: #f1ede0;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	max-width: 740px;
+	font-weight: 400;
+}
+
+.title p:nth-child(1) {
+	font-size: 30px;
+}
+
+.title p:nth-child(2) {
+	font-size: 25px;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	font-weight: 400;
+}
+
+.contacts a {
+	font-size: 20px;
+	color: #f1ede0;
+	text-align: center;
+}
+
+.contacts a:hover {
+	color: #0480b6;
+	transition: 0.1s ease-in-out;
+}
+
+.descripion {
+	max-width: 1000px;
+	color: #f1ede0;
+	font-size: 17px;
+	font-weight: 400;
+	text-align: center;
+	margin: 0 auto;
+	padding-bottom: 47px;
+}
