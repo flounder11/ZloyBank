@@ -57,7 +57,7 @@
 	flex-direction: column;
 	justify-content: center;
 	margin-top: 202px;
-	padding-bottom: 283px;
+	padding-bottom: 308px;
 }
 
 .policy {
@@ -67,12 +67,12 @@
 	margin: 0 auto;
 	justify-content: space-between;
 	font-size: 17px;
-	margin-bottom: 25px;
+	margin-bottom: 10px;
 }
 
 .validation {
 	text-align: center;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 	font-size: 16px;
 }
 

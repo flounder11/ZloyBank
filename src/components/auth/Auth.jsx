@@ -13,6 +13,7 @@ import Minions from './Minions'
 import { set, useForm } from 'react-hook-form'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import NotificationError from '../notification/NotificationError'
 
 const Auth = ({ onRegisterClick }) => {
 	const {
@@ -22,18 +23,18 @@ const Auth = ({ onRegisterClick }) => {
 
 	const [phoneNumber, setPhoneNumber] = useState('')
 	const [password, setPassword] = useState('')
-	const [error, setError] = useState('')
+	const [error, setError] = useState(false)
 	const [isLoading, setIsLoading] = useState(false)
 	const naviagte = useNavigate()
+	const form = document.getElementById('authMain')
 
 	const handle = async e => {
 		e.preventDefault()
-		setError('')
 
-		if (!phoneNumber.trim() || !password.trim()) {
-			setError('Необходимо заполнить все поля')
-			return
-		}
+		// if (!phoneNumber.trim() || !password.trim()) {
+		// 	setError('Необходимо заполнить все поля')
+		// 	return
+		// }
 
 		localStorage.clear()
 		const url = `http://localhost:8082/auth/signin`
@@ -49,15 +50,26 @@ const Auth = ({ onRegisterClick }) => {
 			naviagte('/home')
 		} catch (error) {
 			console.error('Error:', error)
+			setError(true)
 		}
+	}
+
+	const errorBlock = () => {
+		form.style.paddingBottom = '250px'
+		setTimeout(() => {
+			setError(false)
+			form.style.paddingBottom = '308px'
+		}, 5000)
+
+		return <NotificationError notificationText='Произошла ошибка' />
 	}
 
 	return (
 		<section>
-			<div className={styles.auth}>
+			<form onSubmit={handle} className={styles.auth}>
 				<HomePageButton />
 
-				<div className={styles.authMain}>
+				<div id='authMain' className={styles.authMain}>
 					<p className={styles.loginText}>
 						Вход{' '}
 						<span className={styles.register} onClick={onRegisterClick}>
@@ -100,7 +112,9 @@ const Auth = ({ onRegisterClick }) => {
 						<a href=''>Забыли пароль?</a>
 					</div>
 
-					<button onClick={handle} className={styles.login}>
+					{error ? errorBlock() : ''}
+
+					<button type='submit' className={styles.login}>
 						Войти
 					</button>
 
@@ -120,7 +134,7 @@ const Auth = ({ onRegisterClick }) => {
 				<EllipseTop />
 				<EllipseBottom />
 				<Minions imageUrl={minion} />
-			</div>
+			</form>
 		</section>
 	)
 }

@@ -30,7 +30,7 @@ const Header = () => {
 					{isAuthenticated ? (
 						<div>
 							<div className={styles.profile}>
-								<a className={styles.profileLink} href='home'>
+								<a className={styles.profileLink} href='/home'>
 									Личный кабинет
 								</a>
 								<img src={eye} alt='' />
